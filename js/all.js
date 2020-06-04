@@ -2,16 +2,22 @@
 
 $(document).ready(function () {
   // 產品頁切換,sideBar切換
-  let pathName = location.pathname;          //取得目前子路徑
-  let length = pathName.length;              //取得子路徑字串長度
-  let name = pathName.substring(1, length - 5)  //取得目前路徑檔名
-  let target = '#' + name;
+  let pathName = location.pathname;
+  let pathNameArray=pathName.split("/")  
+  let len=pathNameArray.length;
+  
+  let target = '#' + pathNameArray[len-1];
+
+  console.log()
+ 
   if (name == "/") {
     $('#index').addClass('active');
   } else {
     $(target).addClass('active');
   }
 })
+
+
 
 
 
