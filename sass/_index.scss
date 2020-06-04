@@ -1,0 +1,177 @@
+.list {
+    width: 38%;
+
+    .subtitle {
+        span {
+            &:before {
+                content: "(";
+            }
+
+            &:after {
+                content: ")";
+            }
+        }
+    }
+
+    li {
+        padding: 12px;
+        border-top: 1px solid $thirdColor;
+        border-left: 1px solid $thirdColor;
+        border-right: 1px solid $thirdColor;
+
+        &:nth-last-child(1) {
+            border-bottom: 1px solid $thirdColor;
+        }
+
+        &.active {
+            background: $primaryColor;
+        }
+
+        &:hover {
+            background: $primaryColor;
+        }
+    }
+
+}
+
+.listT {
+    width: 160px;
+}
+
+.rightContent {
+    width: 62%;
+    position: relative;
+    overflow: hidden;
+}
+
+.artical {
+    border-radius: 2px;
+    border: 1px solid $thirdColor;
+
+    .subject {
+        padding: 12px;
+        border-bottom: 1px solid $thirdColor;
+
+        .chapter {
+
+            span {
+                &::before {
+                    content: " / "
+                }
+            }
+        }
+    }
+
+    .comment {
+        >div {
+            border-bottom: 1px solid $thirdColor;
+            position: relative;
+        }
+
+        &.reply {
+            >div {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .editBox {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        i {
+            cursor: pointer;
+        }
+    }
+
+
+
+    .name {
+        &.admin {
+            &::after {
+                content: " (You)";
+            }
+        }
+    }
+
+    .time {
+        line-height: 15px;
+
+        span {
+            &:before {
+                content: "("
+            }
+
+            &:after {
+                content: ")"
+            }
+        }
+    }
+
+    .discuss {
+        line-height: 21px;
+
+        ul {
+            margin-left: 1rem;
+            list-style-type: disc;
+        }
+
+        li {
+            border: 0;
+        }
+        span{
+            background: $primaryColor;
+            color: $secondaryColor;
+        }
+    }
+
+    .file {
+        display: block;
+        background: $primaryColor;
+        border: 1px solid $thirdColor;
+    }
+
+
+}
+
+.handleBtn {
+    a {
+        display: block;
+        border-radius: 2px;
+    }
+}
+
+.editArea {
+    position: absolute;
+    bottom: -1000px;
+    right: -1000px;
+    width: 100%;
+    background: white;
+   
+    transition: 0.1s ;
+
+    &.active{
+        bottom: 0;
+        right: 0;
+        border-right: 1px solid $thirdColor;
+        border-left: 1px solid $thirdColor;
+        border-bottom: 1px solid $thirdColor;
+    }
+    select {
+        width: 100px;
+        background: $primaryColor;
+        border: 0;
+    }
+
+    a {
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+
+    textarea {
+        height: 140px;
+        outline: 0;
+    }
+}

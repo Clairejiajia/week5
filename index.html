@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <!-- 符號css載入 start-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- bootstrap css載入 start-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- 自訂css載入 start-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="wrap d-flex ">
+    <div class="sideBar pt-5 primary-bg ">
+      <a class="logo ml-5 mb-3" href="index.html">
+        <h1>answer</h1>
+      </a>
+      <ul id="sideBarSeletor">
+        <li><a id="dashborad" href="#" class="d-flex align-items-center pl-5 mb-3">
+            <i class="material-icons mr-3">assessment</i>
+            Dashboard
+          </a>
+        </li>
+        <li><a id="question" href="#" class="d-flex align-items-center pl-5 mb-3">
+            <i class="material-icons mr-3">question_answer</i>
+            Question
+          </a>
+        </li>
+        <li><a id="index" href="index.html" class="d-flex align-items-center pl-5 mb-3">
+            <i class="material-icons mr-3">assignment</i>
+            Assignment
+          </a>
+        </li>
+        <li><a id="course" href="#" class="d-flex align-items-center pl-5 mb-3"><i
+              class="material-icons mr-3">video_library</i>
+            Course
+          </a> </li>
+        <li><a id="admin" href="admin.html" class="d-flex align-items-center pl-5 mb-3">
+            <i class="material-icons mr-3">group</i>
+            Admin
+          </a> </li>
+        <li><a id="setting" href="#" class="d-flex align-items-center pl-5 mb-3">
+            <i class="material-icons mr-3">settings</i>
+            Settings
+          </a> </li>
+        
+      </ul>
+      <a href="#" class="account d-flex align-items-center px-5 ">
+        <img class="avatar mr-2"
+          src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80">
+        <div class="text">
+          <div class="font-weight-bold">Andy Chen</div>
+          <div class="fonst-0875">andy.chen@mail.com</div>
+        </div>
+      </a>
+    </div>
+    <div class="rightBox p-5 ">
+  <div class=" d-flex justify-content-between mb-5">
+    <div class="d-flex align-items-center">
+      <h2>Assignment</h2>
+      <div id="leftBoxSelector d-flex align-items-center">
+        <div class="selectBox d-flex align-items-center">
+          All Courses
+          <i class="material-icons secondary-color">keyboard_arrow_down</i>
+        </div>
+      </div>
+    </div>
+    <div class="iconMenu d-flex">
+      <a class="search" href="#"><i class="material-icons ">search</i></a>
+      <a class="bell" href="#"><i class="material-icons">notifications_active</i></a></div>
+  </div>
+
+  <div class="d-flex mt-2">
+    <div class="list pr-3">
+      <div class="subtitle d-flex align-items-center mb-2  font-weight-bold">
+        All<span class="mr-2">4</span><i class="material-icons secondary-color">keyboard_arrow_down</i>
+      </div>
+      <ul  id="assignmentList">
+        <li class="active">
+          <div class="d-flex  justify-content-between align-items-center mb-1">
+            <div class="chapter fonst-075">Chapter Assignment 2</div>
+            <div class="duration fonst-075">4 hrs ago</div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="listT font-weight-bold ellipsis">Please check this file for me, thanks!</div>
+            <div class="author dark2-color fonst-075">Emily Wang</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="rightContent">
+      <div class="d-flex align-items-center mb-2  justify-content-end fonst-075 dark3-color">
+        <span class="mr-2">2</span>comments
+      </div>
+      <ul class="artical mb-3" id="assignmentSubject">
+        <li class="subject primary-bg">
+          <!-- <div class="chapter fonst-075 mb-1">Chapter Assignment 2<span>HTML&CSS</span></div>
+          <div class="articleT font-weight-bold">Please check this file for me, thanks!</div> -->
+        </li>
+        <li class="comment student d-flex py-3 pl-3 pr-5">
+          <!-- <img class="avatar mr-2"
+            src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80">
+          <div>
+            <div class="name font-weight-bold mb-05">Emily Wang</div>
+            <div class="time fonst-075 dark2-color mb-3">10:38 AM<span>(4 hours ago)</span></div>
+            <div class="discuss fonst-075">Hi Teacher, the attached file is my homework of chapter 2. And
+              here
+              comes a
+              question: Why in the following code the height of the div is bigger than the height of the
+              img ?
+              There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>
+              What is the gap or
+              extra space below image?</div>
+            <div class="fileList d-flex f-wrap my-3">
+              <a href="#" class="file px-2 py-1 d-flex align-items-center mr-1"><i
+                  class="material-icons">attach_file</i>HW-2-David.zip</a>
+              <a href="#" class="file px-2 py-1 d-flex align-items-center"><i
+                  class="material-icons">attach_file</i>HW-Emily.zip</a>
+            </div>
+
+          </div> -->
+
+        </li>
+       
+        <li class="comment reply d-flex pb-3 pl-3 pr-5">
+          <!-- <img class="avatar mr-2"
+            src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80">
+          <div>
+            <div class="editBox">
+              <i class="material-icons mr-3">grade</i>
+              <i class="material-icons">edit</i>
+            </div>
+            <div class="name font-weight-bold mb-05 admin">Andy Chen</div>
+            <div class="time fonst-075 dark2-color mb-3">13:24 AM <span>(1 hours ago)</span></div>
+            <div class="discuss fonst-075">
+              Hi David, by default, an image is rendered inline, like a letter so
+              it sits on the same line that a, b, c and d sit on.
+              There is space below that line for the descenders you find on letters
+              like g, j, p and q.<br>
+              You can: 　
+              <ul>
+                <li>adjust the vertical-align of the image to position it elsewhere (e.g. the middle )
+                  or
+                </li>
+                <li>change the display so it isn’t inline.</li>
+              </ul> 　
+            </div>
+          </div> -->
+        </li>
+    
+      </ul>
+      <div class=" editArea pb-3 ">
+        <ul class="toolBox d-flex primary-bg py-3 px-4">
+          <li class="mr-4">
+            <select name="" id="">
+              <option value="">Body Text</option>
+              <option value="">font1</option>
+              <option value="">font2</option>
+            </select>
+          </li>
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">format_bold</i>
+            </a></li>
+
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">format_italic</i>
+            </a></li>
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">format_list_bulletedc</i>
+            </a></li>
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">format_list_numbered</i>
+            </a></li>
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">photo</i>
+            </a></li>
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">attach_file</i>
+            </a></li>
+          <li class="mr-4"> <a href="#" class="">
+              <i class="material-icons">code</i>
+            </a></li>
+        </ul>
+        <textarea name="commentTextArea" id="commentTextArea" placeholder="Reply an answer…"
+          class="py-3 px-4 mb-3 border-0 w-100"></textarea>
+        <ul class="d-flex justify-content-end handleBtn">
+          <li class="mr-3">
+            <button type="button" class="btn btn-outline-primary px-3" id="replyCancel">Cancel</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary px-3">Reply</button>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <ul class="d-flex nav">
+          <li class="mr-3"><a href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
+          <li><a href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+        </ul>
+        <ul class="d-flex handleBtn pb-3">
+          <li class="mr-3">
+            <button type="button" class="btn btn-outline-primary px-3">Mark as read</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary px-3" id="replyAction">Reply</button>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+
+
+  <script src="js/vendors.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+  <!-- <script src="js/assignment.js"></script> -->
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

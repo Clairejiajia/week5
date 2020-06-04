@@ -1,0 +1,175 @@
+.memberlist {
+
+    li {
+        height: 55px;
+        border-bottom: 1px solid $thirdColor;
+    }
+
+    .id {
+        width: 12%;
+    }
+
+    .name {
+        width: 25%;
+    }
+
+    .email {
+        width:
+            35%;
+    }
+
+    .veri {
+        width: 20%;
+    }
+
+    .icon {
+        width: 4%;
+
+        a {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin: 0 auto;
+        }
+    }
+
+    .head {
+        border-bottom: 1px solid $dark1;
+    }
+}
+
+.selectBox {
+    border: 0;
+    background: transparent;
+
+    &:hover {
+        color: $secondaryColor;
+    }
+
+    &:focus {
+        outline: none;
+        color: $secondaryColor;
+    }
+}
+
+.pageNav {
+    margin-top: 4.2rem;
+
+    .btn {
+        width: 32px;
+        height: 32px;
+        line-height: 16px;
+
+    }
+}
+
+.modal-header {
+    border: 0
+}
+
+.infoArea {
+    border-bottom: 1px solid $thirdColor;
+
+    label {
+        margin: 0;
+    }
+
+    input[type="text"],
+    input[type="button"],
+    select {
+        height: 51px;
+
+        &.form-control {
+            border: 1px solid $dark1;
+        }
+    }
+
+    .form-check {
+        padding: 0;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]+label {
+        user-select: none;
+
+        &::before {
+            content: "";
+            vertical-align: middle;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            width: 20px;
+            height: 20px;
+            line-height: 16px;
+            border: 2px solid $dark1;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+    }
+
+    input[type="checkbox"]:checked+label {
+        &::before {
+            content: "\2714";
+            color: #fff;
+            background: $secondaryColor;
+            border: 2px solid $secondaryColor;
+        }
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+.checkMsg {
+    display: none;
+
+    &.false i {
+        color: $warningColor;
+        margin-right: 9px;
+    }
+
+    &.true i {
+        color: #2A8356;
+        margin-right: 9px;
+    }
+
+    &.active {
+        display: flex;
+    }
+}
+
+.deleteData {
+    color: $warningColor;
+    margin-right: 9px;
+}
+
+.preview { position: relative;
+    .adminImg {
+        width: 141px;
+        height: 141px;
+        background-size: cover;
+        background-position: center;
+    }
+    .profile{
+        flex-grow: 1;
+    }
+    .veri{
+        height: 25px;
+        text-align: center;
+    }
+    .adminLevel{
+        text-transform:capitalize
+    }
+    .close{
+       position:absolute;
+       right: 0;
+       top: 0;
+       width: 24px;
+       height: 24px;
+    
+    }
+}
