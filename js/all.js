@@ -12,6 +12,7 @@ $(document).ready(function () {
   }
 })
 
+// admin.js start
 var memberData = [{
   id: 'member1',
   name: 'Emir Wicks',
@@ -159,7 +160,9 @@ $(document).ready(function () {
 });
 loadData();
 
+// admin.js end
 
+// assiment.js start
 var assignmentData = [{
   timeStamp: '1591158000000',
   name: 'Emily Wang',
@@ -372,3 +375,4 @@ $(document).ready(function () {
     replyCancel();
   });
 });
+// assiment.js end
