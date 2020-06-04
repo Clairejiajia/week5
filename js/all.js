@@ -3,12 +3,12 @@ $(document).ready(function () {
   let pathName = location.pathname;
   let pathNameArray = pathName.split("/")
   let len = pathNameArray.length;
-  let target = '#' + pathNameArray[len - 1].substring(0,5);
+  let target = pathNameArray[len - 1].substring(0,5);
 
   if (target == "#") {
     $('#index').addClass('active');
   } else {
-    $(target).addClass('active');
+    $('#'+target).addClass('active');
   }
 })
 
