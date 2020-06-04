@@ -3,12 +3,12 @@ $(document).ready(function () {
   let pathName = location.pathname;
   let pathNameArray = pathName.split("/")
   let len = pathNameArray.length;
-  let target = pathNameArray[len - 1].substring(0,5);
+  let target = pathNameArray[len - 1].substring(0, 5);
 
   if (target == "#") {
     $('#index').addClass('active');
   } else {
-    $('#'+target).addClass('active');
+    $('#' + target).addClass('active');
   }
 })
 
@@ -158,25 +158,7 @@ $(document).ready(function () {
   });
 });
 loadData();
-"use strict";
 
-$(document).ready(function () {
-  // 產品頁切換,sideBar切換
-  var pathName = location.pathname; //取得目前子路徑
-
-  var length = pathName.length; //取得子路徑字串長度
-
-  var name = pathName.substring(1, length - 5); //取得目前路徑檔名
-
-  var target = '#' + name;
-
-  if (name == "/") {
-    $('#index').addClass('active');
-  } else {
-    $(target).addClass('active');
-  }
-});
-"use strict";
 
 var assignmentData = [{
   timeStamp: '1591158000000',
