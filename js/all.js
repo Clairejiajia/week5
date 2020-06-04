@@ -3,23 +3,16 @@
 $(document).ready(function () {
   // 產品頁切換,sideBar切換
   let pathName = location.pathname;
-  let pathNameArray=pathName.split("/")  
-  let len=pathNameArray.length;
-  
-  let target = '#' + pathNameArray[len-1];
-
-  console.log()
- 
-  if (name == "/") {
+  let pathNameArray = pathName.split("/")
+  let len = pathNameArray.length;
+  let target = '#' + pathNameArray[len - 1];
+  console.log(target)
+  if (target == "#") {
     $('#index').addClass('active');
   } else {
     $(target).addClass('active');
   }
 })
-
-
-
-
 
 var memberData = [{
   id: 'member1',
