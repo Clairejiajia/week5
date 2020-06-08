@@ -95,7 +95,7 @@
         }
     }
 
-    .time {
+    .time { 
         line-height: 15px;
 
         span {
@@ -120,7 +120,7 @@
         li {
             border: 0;
         }
-        span{
+        code{
             background: $primaryColor;
             color: $secondaryColor;
         }

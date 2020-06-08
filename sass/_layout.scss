@@ -3,7 +3,7 @@
     top: 0;
     width: 296px;
     height:100%;
-   min-height: 450px;
+   min-height: 100vh;
 
     .logo {
         display: block;
@@ -47,7 +47,7 @@
 
 }
 
-.rightBox {
+.content  {
     margin-left: 296px;
     flex-grow: 1;
 

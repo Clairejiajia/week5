@@ -1,0 +1,97 @@
+body {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    color: $dark1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: $dark1;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $secondaryColor;
+    }
+}
+img{
+    width: 100%;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 0;
+}
+
+.primary-bg {
+    background: $primaryColor;
+}
+
+.secondary-bg {
+    background: $secondaryColor;
+}
+
+.third-bg {
+    background: $thirdColor;
+}
+
+.secondary-color {
+    color: $secondaryColor
+}
+
+.dark1-color {
+    color: $dark1
+}
+
+.dark2-color {
+    color: $dark2
+}
+
+.dark3-color {
+    color: $dark3
+}
+
+.dark4-color {
+    color: $dark4
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+// 建立字體尺寸
+.fonst-0875 {
+    font-size: 0.875rem;
+}
+
+.fonst-075 {
+    font-size: 0.75rem;
+}
+.fonst-0875 {
+    font-size: 0.875rem;
+}
+.fonst-15 {
+    font-size: 1.5rem;
+}
+// 建立圓角
+.border-radius-2px{
+    border-radius:2px
+}
